@@ -270,7 +270,7 @@ class PREFIX_OptionsManager {
         ?>
         <div class="wrap">
             <h2><?php _e('System Settings', 'TEXT_DOMAIN'); ?></h2>
-            <table class="form-table"><tbody>
+            <table cellspacing="1" cellpadding="2"><tbody>
             <tr><td><?php _e('System', 'TEXT_DOMAIN'); ?></td><td><?php echo php_uname(); ?></td></tr>
             <tr><td><?php _e('PHP Version', 'TEXT_DOMAIN'); ?></td>
                 <td><?php echo phpversion(); ?>
@@ -300,7 +300,16 @@ class PREFIX_OptionsManager {
 
             <form method="post" action="">
             <?php settings_fields($settingsGroup); ?>
-                <table class="form-table"><tbody>
+                <style type="text/css">
+                    table.plugin-options-table {width: 100%; padding: 0;}
+                    table.plugin-options-table tr:nth-child(even) {background: #f9f9f9}
+                    table.plugin-options-table tr:nth-child(odd) {background: #FFF}
+                    table.plugin-options-table tr:first-child {width: 35%;}
+                    table.plugin-options-table td {vertical-align: middle;}
+                    table.plugin-options-table td+td {width: auto}
+                    table.plugin-options-table td > p {margin-top: 0; margin-bottom: 0;}
+                </style>
+                <table class="plugin-options-table"><tbody>
                 <?php
                 if ($optionMetaData != null) {
                     foreach ($optionMetaData as $aOptionKey => $aOptionMeta) {
