@@ -300,7 +300,14 @@ class PREFIX_OptionsManager {
 
             <form method="post" action="">
             <?php settings_fields($settingsGroup); ?>
-                <table class="form-table"><tbody>
+                <style type="text/css">
+                    table.plugin-options-table {width: 100%}
+                    table.plugin-options-table tr:nth-child(even) {background: #f9f9f9}
+                    table.plugin-options-table tr:nth-child(odd) {background: #FFF}
+                    table.plugin-options-table td {width: 350px}
+                    table.plugin-options-table td+td {width: auto}
+                </style>
+                <table class="plugin-options-table"><tbody>
                 <?php
                 if ($optionMetaData != null) {
                     foreach ($optionMetaData as $aOptionKey => $aOptionMeta) {
