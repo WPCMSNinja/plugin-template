@@ -14,8 +14,8 @@ class PREFIX_Plugin extends PREFIX_LifeCycle {
         return array(
             //'_version' => array('Installed Version'), // Leave this one commented-out. Uncomment to test upgrades.
             'ATextInput' => array(__('Enter in some text', 'my-awesome-plugin')),
-            'Donated' => array(__('I have donated to this plugin', 'my-awesome-plugin'), 'false', 'true'),
-            'CanSeeSubmitData' => array(__('Can See Submission data', 'my-awesome-plugin'),
+            'AmAwesome' => array(__('I like this awesome plugin', 'my-awesome-plugin'), 'false', 'true'),
+            'CanDoSomething' => array(__('Which user role can do something', 'my-awesome-plugin'),
                                         'Administrator', 'Editor', 'Author', 'Contributor', 'Subscriber', 'Anyone')
         );
     }
