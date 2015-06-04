@@ -48,11 +48,13 @@ class InputFormShortCode extends PluginTemplate_ShortCodeScriptLoader {
                 <td><label for="LICENSE_TYPE">License*</label></td>
                 <td>
                     <select id="LICENSE_TYPE" name="LICENSE_TYPE">
-                        <option value="GPLv3" selected>GPLv3  (Free)</option>
-                        <option value="BSD 3-Clause">BSD 3-Clause  (Donate $10)</option>
+                        <option value="GPLv3" selected>GPLv3</option>
+                        <option value="BSD 3-Clause">BSD 3-Clause</option>
                     </select>
                 </td>
-                <td>(see below)</td>
+                <td><a target="_gpl3" href="http://www.opensource.org/licenses/gpl-3.0.html">GPL-3</a>,
+                    <a target="_bsd" href="http://www.opensource.org/licenses/BSD-3-Clause">BSD</a>
+                </td>
             </tr>
             <tr>
                 <td><label for="AUTHOR">Author</label></td>
@@ -76,11 +78,6 @@ class InputFormShortCode extends PluginTemplate_ShortCodeScriptLoader {
             </tr>
             </tbody>
         </table>
-        <p>
-            *<a target="_gpl3" href="http://www.opensource.org/licenses/gpl-3.0.html">GPL-3</a><br/>
-            *<a target="_bsd" href="http://www.opensource.org/licenses/BSD-3-Clause">BSD</a>
-        </p>
-
 
     </form>
 
