@@ -77,11 +77,8 @@ class InputFormShortCode extends PluginTemplate_ShortCodeScriptLoader {
             </tbody>
         </table>
         <p>
-            *If you intend to use this software in a plugin for your own personal use or offer it for free under
-            <a target="_gpl3" href="http://www.opensource.org/licenses/gpl-3.0.html">GPL-3</a> terms,
-            then you can download and use this software for free. If you want the right to sell your software or
-            otherwise be free of GPL-3 terms, then you may download and use the
-            <a target="_bsd" href="http://www.opensource.org/licenses/BSD-3-Clause">BSD</a> licensed version if you donate $10.
+            *<a target="_gpl3" href="http://www.opensource.org/licenses/gpl-3.0.html">GPL-3</a><br/>
+            *<a target="_bsd" href="http://www.opensource.org/licenses/BSD-3-Clause">BSD</a>
         </p>
 
 
@@ -92,6 +89,7 @@ class InputFormShortCode extends PluginTemplate_ShortCodeScriptLoader {
         <tr>
             <td>
                 <div id="DonateButton">
+                    Suggested donation: $10
                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_paypal">
                         <input type="hidden" name="cmd"
                                value="_s-xclick">
